@@ -7,24 +7,21 @@
 var React = require('react-native');
 var {
   AppRegistry,
+  NavigatorIOS,
   StyleSheet,
+  TabBarIOS,
   Text,
-  View,
+  View
 } = React;
+
+var Icon = require('react-native-vector-icons/FontAwesome');
 
 var queseyo = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Hello QueSeYo!
         </Text>
       </View>
     );
