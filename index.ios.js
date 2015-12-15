@@ -1,5 +1,5 @@
 /**
- * Sample React Native App
+ * QueSeYo App
  * https://github.com/facebook/react-native
  */
 'use strict';
@@ -19,6 +19,13 @@ var Icon = require('react-native-vector-icons/FontAwesome');
 var queseyo = React.createClass({
   render: function() {
     return (
+    <TabBarIOS tintColor={"#ea4c89"}>
+      <Icon.TabBarItem
+        title="Todos"
+        iconName="bookmark-o"
+        selected={this.state.selectedTab === 'default'}>
+      </Icon.TabBarItem>
+    </TabBarIOS>
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Hello QueSeYo!
